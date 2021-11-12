@@ -1,25 +1,24 @@
-    const myButton = document.getElementById("slider-button");
-    const myContainer = document.getElementById("slidercontainer");
-    let isMouseDown = false;
-    const beginningX = 190;
-    let beginningY = 10;
-    
-    myButton.addEventListener('mousedown', (e) => {
-        isMouseDown = true;
-        beginningX = e.clientX;
-        beginningY = e.clientY;
-    })
+const myButton = document.getElementById("slider-button");
+const myContainer = document.getElementById("slidercontainer");
+let isMouseDown = false;
+let beginningX = 190;
+let beginningY = 10;
 
-    myContainer.addEventListener('mousemove', (e) => {
-        console.log('beginningY', beginningY)
-        if(isMouseDown) {
-            let x = e.offsetX;
-            let y = e.offsetY;
-            let newY = e.offsetY+beginningY;
-            myButton.setAttribute("style", `top: ${newY}px`);
-        }
-    })
+myButton.addEventListener('mousedown', (e) => {
+    isMouseDown = true;
+    beginningX = e.clientX;
+    beginningY = e.clientY;
+})
 
-    myButton.addEventListener('mouseup', (e) => {
-        isMouseDown = false;
-    });
+myContainer.addEventListener('mousemove', (e) => {
+    if(isMouseDown) {
+        let x = e.offsetX;
+        let y = e.offsetY;
+        let newY = beginningY+(e.offsetY-beginningY);
+        myButton.setAttribute("style", `top: ${newY}px`);
+    }
+})
+
+myButton.addEventListener('mouseup', (e) => {
+    isMouseDown = false;
+});
