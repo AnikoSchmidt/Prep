@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.container {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    min-height: 400px;
+    max-width: 360px;
+    background-color: #f2cc8f;
+}  
+
+#labelcontainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    background-color: #f4f1de;
+    width: 50%;
+}
+
+#trackercontainer {
+    display: flex;
+    height: 100%;
+    margin: auto; 
+    position: relative;
+}
+
+.trackline {
+    display: flex;
+    width: 25px;
+    min-height: 400px;
+    height: 100%;
+    background-color: #81b29a;
+    position: relative;
+}
+
+#slider-button {
+    position: absolute;
+    bottom: 0px;
+    z-index: 100;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #3d405b;
+    color: #f4f1de;
+  }
+
+.mylabel {
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 48px;
+    width: 66%;
+    text-align: center;
+    border: 2px solid #81b29a;
+    border-radius: 5px;
+}
