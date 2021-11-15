@@ -7,7 +7,7 @@
     display: flex;
     width: 90%;
     height: 100%;
-    min-height: 400px;
+    /* min-height: 200px; */
     max-width: 360px;
     background-color: #f2cc8f;
 }  
@@ -30,7 +30,7 @@
 .trackline {
     display: flex;
     width: 25px;
-    min-height: 400px;
+    /* min-height: 100px; */
     height: 100%;
     background-color: #81b29a;
     position: relative;

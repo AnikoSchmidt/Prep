@@ -23,22 +23,22 @@ myButton.addEventListener('mouseup', (e) => {
     isMouseDown = false;
 })
 
-styleYourSlider = (color, size, startPosition) => {
+const styleYourSlider = (color, size, startPosition) => {
     document.getElementById("slider-button").style.backgroundColor = color;
     document.getElementById("labelcontainer").style.height = size;
     document.getElementsByClassName("trackline")[0].style.height = size;
     document.getElementById("slider-button").style.bottom = startPosition;
 }
-styleYourSlider('#6a040f', '700px', '0px');
+styleYourSlider('#6a040f', '400px', '0px');
 
-let array = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130]
-// let array = [1, 2, 3]
-let labels = ''
+// let array = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130];
+let array = [1, 2, 3];
+let labels = '';
 
-createLabels = (array) => {
+const createLabels = (array) => {
     for(let i = 0; i < array.length; i++) {
-        let item = `<div class='mylabel'>${array[i]}</div>`
-    labels = labels + item;
+        let item = `<div class='mylabel'>${array[i]}</div>`;
+        labels = labels + item;
     }
     document.getElementById('labelcontainer').innerHTML =labels;
 }
