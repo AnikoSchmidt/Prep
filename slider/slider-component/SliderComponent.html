@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <title>Slider</title>
-    <link rel="stylesheet" href="./SliderComponent.css">
-  </head>
+<head>
+  <title>Slider</title>
+  <link rel="stylesheet" href="./SliderComponent.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Genos:wght@300&display=swap" rel="stylesheet">
+</head>
 
-  <body>
-    <div class="container">
-      <div id="labelcontainer"></div>
-      <div id="trackercontainer">
-        <div class="trackline">
-          <button id="slider-button">
-            -
-          </button>
-        </div>
+<body>
+  <div class="container">
+    <div id="labelcontainer"></div>
+    <div id="trackercontainer">
+      <div class="trackline">
+        <button id="slider-button">
+          -
+        </button>
       </div>
     </div>
-    <script src="./SliderCompnent.js"></script>
-  </body>
+    <form class="formcontainer">
+      <label for="color">Color:</label><br>
+      <input type="text" id="color" name="color"><br>
+      <label for="size">Size:</label><br>
+      <input type="text" id="size" name="size"><br>
+      <label for="position">Position:</label><br>
+      <input type="text" id="position" name="position"><br>
+      <button id="customstyle" type="button">Submit</button>
+    </form>
+  </div>
+
+  <script src="./SliderCompnent.js"></script>
+</body>
 
 </html>

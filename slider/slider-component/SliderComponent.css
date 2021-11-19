@@ -8,7 +8,7 @@
     width: 90%;
     height: 100%;
     /* min-height: 200px; */
-    max-width: 360px;
+    max-width: 400px;
     background-color: #f2cc8f;
 }  
 
@@ -17,14 +17,14 @@
     flex-direction: column-reverse;
     justify-content: space-between;
     background-color: #f4f1de;
-    width: 50%;
+    width: 30%;
 }
 
 #trackercontainer {
     display: flex;
     height: 100%;
     margin: auto; 
-    position: relative;
+    position: relative;  
 }
 
 .trackline {
@@ -39,6 +39,8 @@
 #slider-button {
     position: absolute;
     bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 100;
     width: 25px;
     height: 25px;
@@ -56,4 +58,33 @@
     text-align: center;
     border: 2px solid #81b29a;
     border-radius: 5px;
+}
+
+.formcontainer {
+    background-color: #f4f1de;
+    width: 30%;
+    padding: 10px;
+}
+
+input {
+    max-width: 100px;
+    margin: 5px;
+    
+}
+
+label {
+    margin: 10px;
+    font-family: 'Genos', sans-serif;
+    font-size: 16px;
+    color: #6a040f;
+}
+
+button {
+    width: 100px;
+    margin: 5px;
+    margin-top: 15px;
+    color: #6a040f;
+    font-family: 'Genos', sans-serif;
+    font-size: 16px;
+   
 }
